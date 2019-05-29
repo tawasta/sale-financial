@@ -22,7 +22,7 @@
 {
     'name': 'Sale Order to Purchase Order, tree info fields',
     'summary': 'Show SO number, header and customer name in PO tree',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

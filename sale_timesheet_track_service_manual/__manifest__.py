@@ -23,7 +23,7 @@
     'name': 'Sales Timesheet - Track Service Manually',
     'summary': "Track service manually by default",
     'category': 'Sales',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

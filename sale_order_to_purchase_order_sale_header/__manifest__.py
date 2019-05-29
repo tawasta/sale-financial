@@ -22,7 +22,7 @@
 {
     'name': 'Sale Order to Purchase Order, Sale Order Header',
     'summary': 'Show sale order header for the purchase orders',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

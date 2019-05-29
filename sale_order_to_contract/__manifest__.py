@@ -21,7 +21,7 @@
 
 {
     'name': 'Sale Order to Contract',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

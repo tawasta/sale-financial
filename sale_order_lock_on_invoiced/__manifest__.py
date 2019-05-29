@@ -22,7 +22,7 @@
 {
     'name': 'Lock sale order when it is invoiced',
     'summary': 'Lock sale order after it state is fully invoiced',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sale',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

@@ -23,7 +23,7 @@
     'name': 'Do not copy pricelist when copying sale order',
     'summary': 'Do not copy pricelist when copying sale order',
     'category': 'Sale',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

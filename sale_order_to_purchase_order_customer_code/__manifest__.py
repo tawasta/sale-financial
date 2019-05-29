@@ -22,7 +22,7 @@
 {
     'name': 'Sale Order to Purchase Order, Customer Code Support',
     'summary': 'Transfer customer product codes to PO lines',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

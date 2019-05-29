@@ -22,7 +22,7 @@
 {
     'name': 'Sale Order Internal Sale',
     'summary': 'Simplifies internal invoicing process',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'CRM',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

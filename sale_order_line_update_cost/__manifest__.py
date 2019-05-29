@@ -22,7 +22,7 @@
 {
     'name': 'Update sale order line product cost directly from order line',
     'summary': 'Add a button to update cost on sale order lines',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sale',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

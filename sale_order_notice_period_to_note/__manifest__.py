@@ -23,7 +23,7 @@
     'name': 'Add notice period to sale order note on order confirm',
     'summary': 'Add notice period to sale order note on order confirm',
     'category': 'Sale',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

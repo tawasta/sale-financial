@@ -23,7 +23,7 @@
     'name': 'Sale Order to Purchase Request',
     'summary': "Create Purchase Requests of sold products and BOM components",
     'category': 'Sales',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

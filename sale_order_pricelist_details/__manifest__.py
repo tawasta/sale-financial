@@ -23,7 +23,7 @@
     'name': 'Product pricelist details',
     'summary': 'Show pricelist details button in pricelist',
     'category': 'Sale',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

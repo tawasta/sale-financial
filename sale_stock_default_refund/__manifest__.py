@@ -22,7 +22,7 @@
 {
     'name': 'Refund sale order returns by default',
     'summary': 'Refund sale order returns by default',
-    'version': '12.0.0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
     'author': 'Oy Tawasta Technologies Ltd.',

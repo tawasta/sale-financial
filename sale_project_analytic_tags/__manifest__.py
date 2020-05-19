@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -25,7 +24,7 @@
     'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Oy Tawasta Technologies Ltd.',
+    'author': 'Tawasta',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
@@ -34,8 +33,8 @@
         'bin': [],
     },
     'depends': [
+        'sale_timesheet_existing_project',
         'sale',
-        'analytic',
     ],
     'data': [
         'views/sale_order_form.xml',

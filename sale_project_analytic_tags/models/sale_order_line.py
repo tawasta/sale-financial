@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from odoo import fields, models
 
 
@@ -13,10 +13,12 @@ class SaleOrderLine(models.Model):
     def _default_get_analytic_tag_ids(self):
         res = False
 
-        project_id = self._context.get('project_id')
-        if project_id:
-            project = self.env['account.analytic.account'].browse([project_id])
+        analytic_account_id = self._context.get('analytic_account_id')
+        if analytic_account_id:
+            analytic_account = self.env['account.analytic.account'].\
+                browse([analytic_account_id])
 
-            res = project.tag_ids
+            res = analytic_account and analytic_account.project_ids and \
+                analytic_account.project_ids[0].analytic_tag_ids
 
         return res

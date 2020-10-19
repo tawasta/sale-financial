@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,22 +19,22 @@
 ##############################################################################
 
 {
-    'name': 'Sale Order to Purchase Request',
-    'summary': "Create Purchase Requests of sold products and BOM components",
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'depends': [
-        'mrp_bom_raw_material_quantities',
-        'purchase_request_analytic_account_location',
-        'sale_order_project_location_in_header',
+    "name": "Sale Order to Purchase Request",
+    "summary": "Create Purchase Requests of sold products and BOM components",
+    "category": "Sales",
+    "version": "12.0.1.0.0",
+    "website": "https://github.com/Tawasta/sale-financial",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": [
+        "sale",
+        "purchase_stock",
+        "purchase_request",
+        "mrp_bom_raw_material_quantities",
+        "purchase_request_analytic_account_location",
+        "sale_order_project_location_in_header",
     ],
-    'data': [
-        'views/sale_config_settings.xml',
-        'views/sale_order.xml',
-    ],
+    "data": ["views/config_settings.xml", "views/sale_order.xml"],
 }

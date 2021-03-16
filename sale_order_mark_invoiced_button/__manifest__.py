@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,25 +19,17 @@
 ##############################################################################
 
 {
-    'name': 'Mark sale orders as invoiced with a button',
-    'summary': 'Mark sale orders as invoiced with a button',
-    'version': '12.0.1.0.0',
-    'category': 'Sales',
-    'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'sale',
-    ],
-    'data': [
-        'views/sale_order.xml',
-    ],
-    'demo': [
-    ],
+    "name": "Mark sale orders as invoiced with a button",
+    "summary": "Mark sale orders as invoiced with a button",
+    "version": "12.0.1.1.0",
+    "category": "Sales",
+    "website": "https://github.com/Tawasta/sale-financial",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["sale", "sale_force_invoiced"],
+    "data": ["views/sale_order.xml"],
+    "demo": [],
 }

@@ -19,8 +19,8 @@ msgstr ""
 
 #. module: sale_order_mark_invoiced_button
 #: model:ir.ui.view,arch_db:sale_order_mark_invoiced_button.sale_form_view_inherit
-msgid "Are you sure? This will mark all order lines as invoiced."
-msgstr "Oletko varma? Tämä merkkaa kaikki tilausrivit laskutetuiksi."
+msgid "Are you sure? This will mark the sale as invoiced"
+msgstr "Oletko varma? Tämä merkkaa myynnin laskutetuksi"
 
 #. module: sale_order_mark_invoiced_button
 #: model:ir.ui.view,arch_db:sale_order_mark_invoiced_button.sale_form_view_inherit

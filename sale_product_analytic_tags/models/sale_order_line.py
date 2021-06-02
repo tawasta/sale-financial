@@ -18,6 +18,6 @@ class SaleOrderLine(models.Model):
             product_id = values.get("product_id")
             product = self.env["product.product"].browse([product_id])
 
-            values["analytic_tag_ids"] = [(6, 0, product.get_analytic_tags())]
+            values["analytic_tag_ids"] = [(6, 0, product.get_analytic_tags().ids)]
 
         return super(SaleOrderLine, self).create(values)

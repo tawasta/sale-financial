@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,16 +19,21 @@
 ##############################################################################
 
 {
-    "name": "Product pricelist details",
-    "summary": "Show pricelist details button in pricelist",
-    "category": "Sale",
+    "name": "Sale Order to Purchase Order",
+    "summary": "Button for creating a PO from SO, containing the same lines",
     "version": "14.0.1.0.0",
-    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
+    "category": "Sales",
+    "website": "https://github.com/Tawasta/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "auto_install": True,
-    "depends": ["product", "sale"],
-    "data": ["views/product_pricelist.xml"],
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["sale", "purchase", "onchange_helper"],
+    "data": [
+        "wizards/purchase_order_wizard.xml",
+        "views/sale_order.xml",
+        "views/purchase_order.xml",
+    ],
+    "demo": [],
 }

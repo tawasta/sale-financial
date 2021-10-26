@@ -46,4 +46,3 @@ addon | version | summary
 [sale_order_to_contract](sale_order_to_contract/) | 12.0.1.0.0 (unported) | Sale Order to Contract
 
 [//]: # (end addons)
-

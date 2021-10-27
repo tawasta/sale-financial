@@ -36,7 +36,7 @@
         "sale_order_to_purchase_order",
     ],
     "data": [
-        "wizards/purchase_order_wizard.xml",
+        "wizards/sale_to_purchase_wizard.xml",
         "views/res_partner.xml",
         "views/sale_order.xml",
     ],

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,25 +19,17 @@
 ##############################################################################
 
 {
-    'name': 'Sale Order to Purchase Order, tree info fields',
-    'summary': 'Show SO number, header and customer name in PO tree',
-    'version': '12.0.1.0.0',
-    'category': 'Sales',
-    'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'sale_order_to_purchase_order_sale_header',
-    ],
-    'data': [
-        'views/purchase_order.xml',
-    ],
-    'demo': [
-    ],
+    "name": "Sale Order to Purchase Order, tree info fields",
+    "summary": "Show SO number, header and customer name in PO tree",
+    "version": "14.0.1.0.0",
+    "category": "Sales",
+    "website": "https://github.com/Tawasta/sale-financial",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["sale_order_to_purchase_order_sale_header"],
+    "data": ["views/purchase_order.xml"],
+    "demo": [],
 }

@@ -28,13 +28,8 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
+    "external_dependencies": {"python": [], "bin": []},
     "depends": ["sale_order_to_purchase_order", "product_supplierinfo_for_customer"],
-    "data": [
-        "wizards/sale_to_purchase_wizard.xml",
-    ],
+    "data": ["wizards/sale_to_purchase_wizard.xml"],
     "demo": [],
 }

@@ -3,12 +3,12 @@ from datetime import datetime, timedelta
 from odoo import api, fields, models
 
 
-class PurchaseOrderWizard(models.TransientModel):
+class SaleToPurchaseWizard(models.TransientModel):
 
-    _inherit = "sale_order_to_purchase_order.po_wizard"
+    _inherit = "sale.to.purchase.wizard"
 
     def create_purchase(self, current_sale):
-        res = super(PurchaseOrderWizard, self).create_purchase(current_sale)
+        res = super().create_purchase(current_sale)
         res.date_receipt_requested = self.date_request_vendor
         return res
 

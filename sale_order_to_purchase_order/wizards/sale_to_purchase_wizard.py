@@ -1,9 +1,9 @@
 from odoo import fields, models
 
 
-class PurchaseOrderWizard(models.TransientModel):
+class SaleToPurchaseWizard(models.TransientModel):
 
-    _name = "sale_order_to_purchase_order.po_wizard"
+    _name = "sale.to.purchase.wizard"
 
     def create_purchase(self, current_sale):
 
@@ -76,7 +76,7 @@ class PurchaseOrderWizard(models.TransientModel):
     partner_id = fields.Many2one(
         comodel_name="res.partner",
         string="Supplier",
-        domain=[("supplier", "=", True)],
+        domain=[("supplier_rank", ">", 0)],
         required=True,
     )
 

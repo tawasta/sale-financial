@@ -1,22 +1,15 @@
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class PurchaseOrder(models.Model):
 
     _inherit = "purchase.order"
 
-    @api.multi
-    def copy(self, default=None):
-        # When copying a purchase order, exclude the Sale Order info
-        self.ensure_one()
-        default = default or {}
-        default["sale_order_id"] = False
-        return super(PurchaseOrder, self).copy(default)
-
     sale_order_id = fields.Many2one(
         comodel_name="sale.order",
         string="Sale Order",
         help="The Sale Order this Purchase originated from",
+        copy=False,
     )
 
     so_client_order_ref = fields.Char(

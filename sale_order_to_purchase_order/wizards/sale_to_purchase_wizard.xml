@@ -3,7 +3,7 @@
 
     <record id="view_sale_to_purchase" model="ir.ui.view">
         <field name="name">Create RFQ</field>
-        <field name="model">sale_order_to_purchase_order.po_wizard</field>
+        <field name="model">sale.to.purchase.wizard</field>
         <field name="arch" type="xml">
             <form string="Create RFQ">
                 <p class="oe_grey">
@@ -29,8 +29,7 @@
     <record id="action_po_wizard" model="ir.actions.act_window">
         <field name="name">Create RFQ</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">sale_order_to_purchase_order.po_wizard</field>
-        <field name="view_type">form</field>
+        <field name="res_model">sale.to.purchase.wizard</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>

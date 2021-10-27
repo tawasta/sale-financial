@@ -29,11 +29,12 @@
     "application": False,
     "installable": True,
     "external_dependencies": {"python": [], "bin": []},
-    "depends": ["sale", "purchase", "onchange_helper"],
+    "depends": ["sale_stock", "purchase", "onchange_helper"],
     "data": [
-        "wizards/purchase_order_wizard.xml",
+        "security/model_access.xml",
         "views/sale_order.xml",
         "views/purchase_order.xml",
+        "wizards/sale_to_purchase_wizard.xml",
     ],
     "demo": [],
 }

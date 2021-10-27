@@ -1,1 +1,1 @@
-from . import purchase_order_wizard
+from . import sale_to_purchase_wizard

@@ -15,15 +15,16 @@
     <record id="sale_form_view_inherit" model="ir.ui.view">
         <field name="name">sale.order.form.view.inherit</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/>
         <field name="arch" type="xml">
 
             <field name="state" position="before">
+                <field name="warehouse_id" invisible="1" />
                 <button name="%(sale_order_to_purchase_order.action_po_wizard)d"
-                    string="Create RFQ"
-                    type="action"
-                    context="{ 'warehouse_id': warehouse_id,
-                        'customer_id': partner_id }"/>
+                        string="Create RFQ"
+                        type="action"
+                        groups="purchase.group_purchase_user"
+                        context="{'warehouse_id': warehouse_id, 'customer_id': partner_id}"/>
             </field>
 
             <notebook position="inside">

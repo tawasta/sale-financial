@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -29,10 +28,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
+    "external_dependencies": {"python": [], "bin": []},
     "depends": [
         "base_view_inheritance_extension",
         "purchase_order_requested_receipt_date",

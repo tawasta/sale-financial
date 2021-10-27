@@ -28,13 +28,8 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
+    "external_dependencies": {"python": [], "bin": []},
     "depends": ["sale_order_to_purchase_order", "sale_order_header"],
-    "data": [
-        "views/purchase_order.xml",
-    ],
+    "data": ["views/purchase_order.xml"],
     "demo": [],
 }

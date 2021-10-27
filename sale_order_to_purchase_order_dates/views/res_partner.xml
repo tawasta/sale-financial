@@ -9,7 +9,7 @@
                 <label for="vendor_dropship_delay"/>
                 <div>
                     <field name="vendor_dropship_delay" class="oe_inline"/> days
-                </div>                
+                </div>
             </group>
         </field>
     </record>

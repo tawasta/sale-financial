@@ -13,6 +13,7 @@ class SaleToPurchaseWizard(models.TransientModel):
             "partner_id": self.partner_id.id,
             "picking_type_id": self.picking_type_id.id,
             "sale_order_id": current_sale.id,
+            "origin": current_sale.name,
         }
 
         updated_values = purchase_order_model.play_onchanges(

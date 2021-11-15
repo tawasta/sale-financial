@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id="view_sale_to_purchase" model="ir.ui.view">
         <field name="name">Create RFQ</field>
         <field name="model">sale.to.purchase.wizard</field>
@@ -9,23 +8,17 @@
                 <p class="oe_grey">
                     Select a supplier for the RFQ
                 </p>
-
                 <group name="basic_information">
                     <field name="partner_id"/>
-                    <field name="picking_type_id"
-                        domain="[('code', '=', 'incoming')]"
-                        options="{'no_create': True}"/>
+                    <field name="picking_type_id" domain="[('code', '=', 'incoming')]" options="{'no_create': True}"/>
                 </group>
-
-                <footer>
-                    <button name="button_create_po" string="Create RFQ" type="object" class="oe_highlight"/>
+                <footer><button name="button_create_po" string="Create RFQ" type="object" class="oe_highlight"/>
                     or
                     <button string="Cancel" class="oe_link" special="cancel"/>
                 </footer>
             </form>
         </field>
     </record>
-
     <record id="action_po_wizard" model="ir.actions.act_window">
         <field name="name">Create RFQ</field>
         <field name="type">ir.actions.act_window</field>
@@ -33,5 +26,4 @@
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
-
 </odoo>

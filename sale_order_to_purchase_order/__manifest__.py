@@ -32,9 +32,9 @@
     "depends": ["sale_stock", "purchase", "onchange_helper"],
     "data": [
         "security/model_access.xml",
+        "wizards/sale_to_purchase_wizard.xml",
         "views/sale_order.xml",
         "views/purchase_order.xml",
-        "wizards/sale_to_purchase_wizard.xml",
     ],
     "demo": [],
 }

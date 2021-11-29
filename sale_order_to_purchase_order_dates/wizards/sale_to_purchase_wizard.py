@@ -16,9 +16,7 @@ class SaleToPurchaseWizard(models.TransientModel):
     def onchange_partner_id(self):
 
         if self.date_request_customer:
-            request_customer = datetime.strptime(
-                self.date_request_customer, "%Y-%m-%d %H:%M:%S"
-            )
+            request_customer = self.date_request_customer
             date_request = request_customer - timedelta(days=self.vendor_dropship_delay)
 
             self.date_request_vendor = date_request

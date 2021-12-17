@@ -72,7 +72,7 @@ class SaleToPurchaseWizard(models.TransientModel):
             ("warehouse_id", "=", self.env.context["warehouse_id"]),
         ]
 
-        res = self.env["stock.picking.type"].search(args=args, limit=1)
+        res = self.env["stock.picking.type"].search(args, limit=1)
         return res and res[0] or False
 
     def _get_default_customer(self):

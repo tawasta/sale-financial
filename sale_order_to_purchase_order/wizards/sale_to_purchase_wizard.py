@@ -16,6 +16,10 @@ class SaleToPurchaseWizard(models.TransientModel):
             "origin": current_sale.name,
         }
 
+        if self.picking_type_id.default_location_dest_id.usage == "customer":
+            # Dropshippping
+            initial_values["dest_address_id"] = current_sale.partner_shipping_id.id
+
         updated_values = purchase_order_model.play_onchanges(
             initial_values, ["partner_id"]
         )

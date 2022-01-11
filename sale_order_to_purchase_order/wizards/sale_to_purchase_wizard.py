@@ -12,7 +12,6 @@ class SaleToPurchaseWizard(models.TransientModel):
         initial_values = {
             "partner_id": self.partner_id.id,
             "picking_type_id": self.picking_type_id.id,
-            "sale_order_id": current_sale.id,
             "origin": current_sale.name,
         }
 
@@ -36,6 +35,8 @@ class SaleToPurchaseWizard(models.TransientModel):
             "product_qty": current_sale_line.product_uom_qty,
             "product_uom": current_sale_line.product_uom.id,
             "partner_id": purchase_order.partner_id.id,
+            "sale_order_id": current_sale_line.order_id.id,
+            "sale_line_id": current_sale_line.id,
         }
 
         updated_values = purchase_order_line_model.play_onchanges(

@@ -1,6 +1,4 @@
 from odoo import fields, models
-from odoo import _
-from odoo.exceptions import ValidationError
 
 
 class PurchaseOrder(models.Model):
@@ -27,7 +25,7 @@ class PurchaseOrder(models.Model):
 
         for record in self:
             if record.picking_type_id.default_location_dest_id.usage != "customer":
-                # Customize the picking logic only for dropship-orders that originate from an SO
+                # Custom picking logic only for dropship-order
                 continue
             sale_orders = record.order_line.mapped("sale_order_id")
 

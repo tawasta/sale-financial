@@ -1,4 +1,6 @@
 from odoo import fields, models
+from odoo import _
+from odoo.exceptions import ValidationError
 
 
 class PurchaseOrder(models.Model):
@@ -19,3 +21,25 @@ class PurchaseOrder(models.Model):
     so_partner_id = fields.Many2one(
         related="sale_order_id.partner_id", string="Sale Order Customer"
     )
+
+    def button_confirm(self):
+        res = super().button_confirm()
+
+        for record in self:
+            if record.picking_type_id.default_location_dest_id.usage != "customer":
+                # Customize the picking logic only for dropship-orders that originate from an SO
+                continue
+            sale_orders = record.order_line.mapped("sale_order_id")
+
+            for sale_order in sale_orders:
+                # Cancel the related deliveries on SO
+                sale_order.picking_ids.action_cancel()
+
+                # Change the procurement group on SO
+                sale_order.procurement_group_id = record.group_id
+
+            if len(sale_orders) == 1:
+                # Set pickings sale id as current sale id
+                record.picking_ids.write({"sale_id": sale_orders[0].id})
+
+        return res

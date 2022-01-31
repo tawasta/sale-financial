@@ -21,7 +21,7 @@
 {
     "name": "Sale Order to Purchase Order",
     "summary": "Button for creating a PO from SO, containing the same lines",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.2.0",
     "category": "Sales",
     "website": "https://github.com/Tawasta/sale-financial",
     "author": "Tawasta",

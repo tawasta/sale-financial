@@ -11,8 +11,12 @@ class SaleToPurchaseWizard(models.TransientModel):
 
         initial_values = {
             "partner_id": self.partner_id.id,
+            "company_id": current_sale.company_id.id,
+            "currency_id": current_sale.currency_id.id
+            or self.env.company.currency_id.id,
             "picking_type_id": self.picking_type_id.id,
             "origin": current_sale.name,
+            "payment_term_id": self.partner_id.property_supplier_payment_term_id.id,
         }
 
         if self.picking_type_id.default_location_dest_id.usage == "customer":

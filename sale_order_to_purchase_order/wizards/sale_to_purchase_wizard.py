@@ -40,7 +40,7 @@ class SaleToPurchaseWizard(models.TransientModel):
             "product_uom": current_sale_line.product_uom.id,
             "partner_id": purchase_order.partner_id.id,
             "sale_order_id": current_sale_line.order_id.id,
-            "sale_line_id": current_sale_line.id,
+            # "sale_line_id": current_sale_line.id,
         }
 
         updated_values = purchase_order_line_model.play_onchanges(

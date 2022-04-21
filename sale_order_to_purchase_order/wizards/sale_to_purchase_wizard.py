@@ -7,7 +7,6 @@ class SaleToPurchaseWizard(models.TransientModel):
     _name = "sale.to.purchase.wizard"
 
     def create_purchase(self, current_sale):
-
         purchase_order_model = self.env["purchase.order"]
 
         initial_values = {
@@ -18,6 +17,7 @@ class SaleToPurchaseWizard(models.TransientModel):
             "picking_type_id": self.picking_type_id.id,
             "origin": current_sale.name,
             "payment_term_id": self.partner_id.property_supplier_payment_term_id.id,
+            "sale_order_id": current_sale.id,
         }
 
         if self.picking_type_id.default_location_dest_id.usage == "customer":
@@ -61,7 +61,6 @@ class SaleToPurchaseWizard(models.TransientModel):
         return purchase_order_line_model.create(updated_values)
 
     def button_create_po(self):
-
         current_sale = self.env["sale.order"].browse(self.env.context["active_id"])
         po_res = self.create_purchase(current_sale)
 

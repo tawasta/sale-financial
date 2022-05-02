@@ -7,13 +7,13 @@ Sale Order to Purchase Order - Date Extension
 =============================================
 
 * Looks at 1) the requested delivery date given by the end customer of a sale
-  order and 2) the usual delivery delay of the vendor that is dropshipping the 
-  goods to them. 
+  order and 2) the usual delivery delay of the vendor that is dropshipping the
+  goods to them.
 * When creating a purchase order from the sale, the delay information is used
   to compensate and suggest an earlier requested delivery date from the
   vendor.
 * Intended for situations where vendors are known to often dropship goods
-  late, so that there is a buffer between the requested delivery and the 
+  late, so that there is a buffer between the requested delivery and the
   actual date when end customer needs the goods.
 
 Configuration
@@ -23,7 +23,7 @@ Configuration
 
 Usage
 =====
-* Click the "Create RFQ" button on the Sale Order form. Select a vendor and 
+* Click the "Create RFQ" button on the Sale Order form. Select a vendor and
   edit the Requested delivery date field if necessary. Print a purchase order.
 
 Known issues / Roadmap

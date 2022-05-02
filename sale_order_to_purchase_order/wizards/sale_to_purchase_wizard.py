@@ -1,5 +1,4 @@
-from odoo import fields, models
-from odoo import _
+from odoo import _, fields, models
 
 
 class SaleToPurchaseWizard(models.TransientModel):

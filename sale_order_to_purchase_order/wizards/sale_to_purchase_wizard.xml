@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <record id="view_sale_to_purchase" model="ir.ui.view">
         <field name="name">Create RFQ</field>
@@ -9,12 +9,21 @@
                     Select a supplier for the RFQ
                 </p>
                 <group name="basic_information">
-                    <field name="partner_id"/>
-                    <field name="picking_type_id" domain="[('code', '=', 'incoming')]" options="{'no_create': True}"/>
+                    <field name="partner_id" />
+                    <field
+                        name="picking_type_id"
+                        domain="[('code', '=', 'incoming')]"
+                        options="{'no_create': True}"
+                    />
                 </group>
-                <footer><button name="button_create_po" string="Create RFQ" type="object" class="oe_highlight"/>
+                <footer><button
+                        name="button_create_po"
+                        string="Create RFQ"
+                        type="object"
+                        class="oe_highlight"
+                    />
                     or
-                    <button string="Cancel" class="oe_link" special="cancel"/>
+                    <button string="Cancel" class="oe_link" special="cancel" />
                 </footer>
             </form>
         </field>

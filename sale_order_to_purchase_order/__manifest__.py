@@ -33,8 +33,9 @@
     "data": [
         "security/model_access.xml",
         "wizards/sale_to_purchase_wizard.xml",
-        "views/sale_order.xml",
         "views/purchase_order.xml",
+        "views/res_company.xml",
+        "views/sale_order.xml",
     ],
     "demo": [],
 }

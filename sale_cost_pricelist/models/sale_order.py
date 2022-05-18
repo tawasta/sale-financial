@@ -34,7 +34,5 @@ class SaleOrder(models.Model):
                 res["purchase_price"] = pricelist_item._compute_price(
                     price, uom, product, quantity, partner
                 )
-                print("HERE")
-                print(res["purchase_price"])
 
         return res

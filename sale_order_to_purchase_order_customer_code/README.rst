@@ -16,7 +16,7 @@ Configuration
 Usage
 =====
 * Click the "Create RFQ" button on the Sale Order form, and check the box
-  "Show Customer Product Codes" 
+  "Show Customer Product Codes"
 
 Known issues / Roadmap
 ======================

@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,23 +19,15 @@
 ##############################################################################
 
 {
-    "name": "Sale Order to Purchase Order",
-    "summary": "Button for creating a PO from SO, containing the same lines",
-    "version": "14.0.1.2.2",
+    "name": "Product analytic tags on sale order lines",
+    "summary": "Adds sale order line analytic tags from products",
+    "version": "14.0.1.0.0",
     "category": "Sales",
-    "website": "https://github.com/Tawasta/sale-financial",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {"python": [], "bin": []},
-    "depends": ["sale_stock", "purchase", "onchange_helper"],
-    "data": [
-        "security/model_access.xml",
-        "wizards/sale_to_purchase_wizard.xml",
-        "views/purchase_order.xml",
-        "views/res_company.xml",
-        "views/sale_order.xml",
-    ],
-    "demo": [],
+    "depends": ["sale", "product_analytic_tags"],
+    "data": [],
 }

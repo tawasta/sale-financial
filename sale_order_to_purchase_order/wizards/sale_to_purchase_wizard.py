@@ -1,5 +1,4 @@
 from odoo import fields, models
-from odoo import _
 
 
 class SaleToPurchaseWizard(models.TransientModel):
@@ -25,9 +24,9 @@ class SaleToPurchaseWizard(models.TransientModel):
             initial_values["dest_address_id"] = current_sale.partner_shipping_id.id
 
             if current_sale.client_order_ref:
-                initial_values["notes"] = _(
-                    "Please print this customer reference to your delivery note: {}"
-                ).format(current_sale.client_order_ref)
+                initial_values["notes"] = "{} {}".format(current_sale.\
+                    company_id.with_context(lang=self.partner_id.lang).\
+                    sale_to_purchase_note_text, current_sale.client_order_ref)
 
         updated_values = purchase_order_model.play_onchanges(
             initial_values, ["partner_id"]

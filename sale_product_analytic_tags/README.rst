@@ -2,14 +2,14 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=====================================
-Sale Order Invoice Commercial Partner
-=====================================
-
-* This module replaces invoice partner with commercial partner
+=========================================
+Product analytic tags on sale order lines
+=========================================
+Adds sale order line analytic tags from products
 
 Configuration
 =============
+
 \-
 
 Usage
@@ -25,15 +25,14 @@ Credits
 
 Contributors
 ------------
-
-* Timo Kekäläinen <timo.kekalainen@tawasta.fi>
+* Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
 * Miika Nissi <miika.nissi@tawasta.fi>
 
 Maintainer
 ----------
 
-.. image:: https://tawasta.fi/templates/tawastrap/images/logo.png
+.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
    :alt: Oy Tawasta OS Technologies Ltd.
-   :target: https://tawasta.fi/
+   :target: http://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd.

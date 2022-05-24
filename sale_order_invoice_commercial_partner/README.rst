@@ -5,7 +5,8 @@
 =====================================
 Sale Order Invoice Commercial Partner
 =====================================
-* This module replaces partner_invoice_id with commercial_partner_id on sale order form.
+
+* This module replaces invoice partner with commercial partner
 
 Configuration
 =============
@@ -31,8 +32,8 @@ Contributors
 Maintainer
 ----------
 
-.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
+.. image:: https://tawasta.fi/templates/tawastrap/images/logo.png
    :alt: Oy Tawasta OS Technologies Ltd.
-   :target: http://tawasta.fi/
+   :target: https://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd.

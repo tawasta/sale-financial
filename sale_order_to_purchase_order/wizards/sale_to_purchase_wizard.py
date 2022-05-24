@@ -24,9 +24,12 @@ class SaleToPurchaseWizard(models.TransientModel):
             initial_values["dest_address_id"] = current_sale.partner_shipping_id.id
 
             if current_sale.client_order_ref:
-                initial_values["notes"] = "{} {}".format(current_sale.\
-                    company_id.with_context(lang=self.partner_id.lang).\
-                    sale_to_purchase_note_text, current_sale.client_order_ref)
+                initial_values["notes"] = "{} {}".format(
+                    current_sale.company_id.with_context(
+                        lang=self.partner_id.lang
+                    ).sale_to_purchase_note_text,
+                    current_sale.client_order_ref,
+                )
 
         updated_values = purchase_order_model.play_onchanges(
             initial_values, ["partner_id"]
@@ -45,7 +48,7 @@ class SaleToPurchaseWizard(models.TransientModel):
             "product_uom": current_sale_line.product_uom.id,
             "partner_id": purchase_order.partner_id.id,
             "sale_order_id": current_sale_line.order_id.id,
-            # "sale_line_id": current_sale_line.id,
+            "sale_line_id": current_sale_line.id,
         }
 
         updated_values = purchase_order_line_model.play_onchanges(

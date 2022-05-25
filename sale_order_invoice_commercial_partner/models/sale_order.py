@@ -8,3 +8,5 @@ class SaleOrder(models.Model):
         res = super()._prepare_invoice()
         if self.partner_invoice_id != self.partner_invoice_id.commercial_partner_id:
             res["partner_id"] = self.partner_invoice_id.commercial_partner_id.id
+
+        return res

@@ -23,7 +23,7 @@
     "summary": "Button for creating a PO from SO, containing the same lines",
     "version": "14.0.1.2.3",
     "category": "Sales",
-    "website": "https://github.com/Tawasta/sale-financial",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

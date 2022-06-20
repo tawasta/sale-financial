@@ -23,7 +23,7 @@
     "summary": "Transfer customer product codes to PO lines",
     "version": "14.0.1.0.0",
     "category": "Sales",
-    "website": "https://github.com/Tawasta/sale-financial",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

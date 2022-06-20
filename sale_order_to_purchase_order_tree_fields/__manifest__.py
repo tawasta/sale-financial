@@ -23,7 +23,7 @@
     "summary": "Show SO number, header and customer name in PO tree",
     "version": "14.0.1.0.0",
     "category": "Sales",
-    "website": "https://github.com/Tawasta/sale-financial",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

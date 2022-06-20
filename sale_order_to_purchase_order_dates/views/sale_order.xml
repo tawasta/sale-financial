@@ -10,11 +10,13 @@
         <field name="arch" type="xml">
             <button
                 name="%(sale_order_to_purchase_order.action_po_wizard)d"
-                position="attributes">
+                position="attributes"
+            >
                 <attribute
                     name="context"
                     operation="python_dict"
-                    key="default_date_request_customer">date_delivery_requested</attribute>
+                    key="default_date_request_customer"
+                >date_delivery_requested</attribute>
             </button>
         </field>
     </record>

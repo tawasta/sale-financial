@@ -23,7 +23,7 @@
     "summary": "Adds estimated invoice date to SO",
     "version": "14.0.1.0.0",
     "category": "Sale",
-    "website": "https://gitlab.com/tawasta/odoo/sale-financial/",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

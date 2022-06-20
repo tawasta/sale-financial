@@ -1,3 +1,4 @@
+
 [MASTER]
 load-plugins=pylint_odoo
 score=n
@@ -12,6 +13,7 @@ valid_odoo_versions=14.0
 
 [MESSAGES CONTROL]
 disable=all
+
 enable=anomalous-backslash-in-string,
     api-one-deprecated,
     api-one-multi-together,

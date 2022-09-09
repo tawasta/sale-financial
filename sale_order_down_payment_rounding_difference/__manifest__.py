@@ -19,22 +19,21 @@
 ##############################################################################
 
 {
-    'name': 'Sale order: Rounding difference line for final invoice when using down payment',
-    'summary': 'Add a rounding difference line for final payment if there is a discrepancy with down payment',
-    'version': '12.0.1.0.0',
-    'category': 'Sales',
-    'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Tawasta Oy',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
+    "name": "Sale order: Rounding difference line for final invoice when using down payment",
+    "summary": "Add a rounding difference line for final payment",
+    "version": "14.0.1.0.0",
+    "category": "Sales",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {
+        "python": [],
+        "bin": [],
     },
-    'depends': [
-        'sale',
+    "depends": [
+        "sale",
     ],
-    'data': [
-    ]
+    "data": [],
 }

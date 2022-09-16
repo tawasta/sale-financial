@@ -21,7 +21,7 @@
 {
     "name": "Sale Order Estimated Invoice Date",
     "summary": "Adds estimated invoice date to SO",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Sale",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

@@ -37,7 +37,9 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     # 2. Fields declaration
-    estimated_invoice_date = fields.Date(string="Estimated invoice date")
+    estimated_invoice_date = fields.Date(
+        help="Estimated date of invoice for this sale."
+    )
 
     # 3. Default methods
 

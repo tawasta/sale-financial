@@ -21,7 +21,7 @@
 {
     "name": "Sale Order to Purchase Order",
     "summary": "Button for creating a PO from SO, containing the same lines",
-    "version": "14.0.1.2.3",
+    "version": "14.0.1.2.4",
     "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

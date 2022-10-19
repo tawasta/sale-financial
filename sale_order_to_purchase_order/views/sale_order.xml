@@ -23,6 +23,7 @@
                     type="action"
                     groups="purchase.group_purchase_user"
                     context="{'warehouse_id': warehouse_id, 'customer_id': partner_id}"
+                    attrs="{'invisible': [('state', 'not in', ['sale', 'done'])]}"
                 />
             </field>
             <notebook position="inside">

@@ -2,10 +2,10 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-==============================================
-Sale Order to Purchase Order, tree info fields
-==============================================
-
+=========================================================
+DEPRECATED Sale Order to Purchase Order, tree info fields
+=========================================================
+REMOVE MODULE
 * Show SO number, header and customer name in PO tree
 
 Configuration

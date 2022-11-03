@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    "name": "Sale Order to Purchase Order, tree info fields",
+    "name": "DEPRECATED: Sale Order to Purchase Order, tree info fields",
     "summary": "Show SO number, header and customer name in PO tree",
     "version": "14.0.1.0.0",
     "category": "Sales",

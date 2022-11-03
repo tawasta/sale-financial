@@ -28,6 +28,8 @@
         <field name="arch" type="xml">
             <field name="origin" position="after">
                 <field name="sale_order_id" optional="show" />
+                <field name="so_partner_id" optional="show" />
+                <field name="so_client_order_ref" optional="show" />
             </field>
         </field>
     </record>
@@ -38,6 +40,8 @@
         <field name="arch" type="xml">
             <field name="origin" position="after">
                 <field name="sale_order_id" optional="show" />
+                <field name="so_partner_id" optional="show" />
+                <field name="so_client_order_ref" optional="show" />
             </field>
         </field>
     </record>
@@ -48,6 +52,8 @@
         <field name="arch" type="xml">
             <field name="origin" position="after">
                 <field name="sale_order_id" optional="show" />
+                <field name="so_partner_id" optional="show" />
+                <field name="so_client_order_ref" optional="show" />
             </field>
         </field>
     </record>

@@ -21,7 +21,7 @@
 {
     "name": "Sale Order - Commitment date on pivot and tree views",
     "summary": "Adds Commitment date on pivot and tree views",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Sale Management",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
@@ -29,5 +29,8 @@
     "application": False,
     "installable": True,
     "depends": ["sale_order_line_view"],
-    "data": ["views/sale_order_line.xml"],
+    "data": [
+        "report/sale_report.xml",
+        "views/sale_order_line.xml",
+    ],
 }

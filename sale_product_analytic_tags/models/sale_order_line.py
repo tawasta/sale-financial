@@ -13,11 +13,19 @@ class SaleOrderLine(models.Model):
 
     @api.model
     def create(self, values):
-
+        res = super().create(values)
         if "analytic_tag_ids" not in values:
-            product_id = values.get("product_id")
-            product = self.env["product.product"].browse([product_id])
+            res.sudo().onchange_product_id_update_analytic_tags()
 
-            values["analytic_tag_ids"] = [(6, 0, product.get_analytic_tags().ids)]
+        return res
 
-        return super(SaleOrderLine, self).create(values)
+    def write(self, values):
+        # This might cause problems when user tries to remove all analytic tags
+        # The reason for this override is, that e-commerce orders will not, for some reason,
+        # preserve analytic tags. They are set on create, but overwritten.
+        if "analytic_tag_ids" not in values:
+            for record in self:
+                if not record.analytic_tag_ids:
+                    record.sudo().onchange_product_id_update_analytic_tags()
+
+        return super().write(values)

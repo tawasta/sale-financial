@@ -12,7 +12,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_cost_pricelist](sale_cost_pricelist/) | 14.0.1.0.0 |  | Allows using cost pricelist for sale orders
-[sale_order_commitment_date_pivot_and_tree](sale_order_commitment_date_pivot_and_tree/) | 14.0.1.0.0 |  | Adds Commitment date on pivot and tree views
+[sale_order_commitment_date_pivot_and_tree](sale_order_commitment_date_pivot_and_tree/) | 14.0.1.0.1 |  | Adds Commitment date on pivot and tree views
 [sale_order_down_payment_rounding_difference](sale_order_down_payment_rounding_difference/) | 14.0.1.0.0 |  | Add a rounding difference line for final payment
 [sale_order_estimated_invoice_date](sale_order_estimated_invoice_date/) | 14.0.1.0.1 |  | Adds estimated invoice date to SO
 [sale_order_invoice_commercial_partner](sale_order_invoice_commercial_partner/) | 14.0.1.0.1 |  | Invoice Address is replaced with Commercial Partner

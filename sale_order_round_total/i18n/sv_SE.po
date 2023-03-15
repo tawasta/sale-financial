@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_round_total
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20221025\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-13 13:05+0000\n"
+"PO-Revision-Date: 2023-03-13 13:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_round_total
+#: model:ir.model,name:sale_order_round_total.model_res_currency
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__display_name
+#: model:ir.model.fields,field_description:sale_order_round_total.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__id
+#: model:ir.model.fields,field_description:sale_order_round_total.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency____last_update
+#: model:ir.model.fields,field_description:sale_order_round_total.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Senast redigerad"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,help:sale_order_round_total.field_res_currency__sale_order_rounding
+msgid "Round sale order totals to a whole number"
+msgstr ""
+
+#. module: sale_order_round_total
+#: code:addons/sale_order_round_total/models/sale_order.py:0
+#, python-format
+msgid "Rounding difference"
+msgstr "Avrundning"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__sale_order_rounding
+msgid "Sale order rounding"
+msgstr ""
+
+#. module: sale_order_round_total
+#: model:ir.model,name:sale_order_round_total.model_sale_order
+msgid "Sales Order"
+msgstr "Kundorder"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__smart_search
+#: model:ir.model.fields,field_description:sale_order_round_total.field_sale_order__smart_search
+msgid "Smart Search"
+msgstr ""

@@ -36,7 +36,7 @@ class AccountMOve(models.Model):
                         so_msg = _(
                             "Removed down payment line for {}, "
                             "because invoice '{}' was refunded".format(
-                                dp_line.price_subtotal, record.reversed_entry_id.name
+                                dp_line.price_unit, record.reversed_entry_id.name
                             )
                         )
 

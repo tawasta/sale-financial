@@ -22,7 +22,7 @@
     "name": "Product pricelist details",
     "summary": "Show pricelist details button in pricelist",
     "category": "Sale",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
@@ -30,5 +30,5 @@
     "installable": True,
     "auto_install": True,
     "depends": ["product", "sale"],
-    "data": ["views/product_pricelist.xml"],
+    "data": ["views/product_pricelist.xml", "views/product_pricelist_line.xml"],
 }

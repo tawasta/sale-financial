@@ -6,7 +6,7 @@
 Sale order: Remove down payment line if down payment gets refunded
 ==================================================================
 
-Remove down payment line from SO, if down payment is refunded.
+Remove a down payment line from SO, if down payment is refunded.
 
 Sale order down payment line is removed only if refund subtotal matches
 the subtotal of the original invoice (full refund).

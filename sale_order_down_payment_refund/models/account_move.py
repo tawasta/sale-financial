@@ -18,7 +18,7 @@ class AccountMOve(models.Model):
             invoice = record.reversed_entry_id
 
             for refund_line in invoice.invoice_line_ids:
-                dp_lines = False
+                dp_lines = {}
                 if refund_line.product_id == product:
                     # Get down payment lines
                     dp_lines = refund_line.sale_line_ids.filtered(

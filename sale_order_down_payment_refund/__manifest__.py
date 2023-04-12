@@ -21,7 +21,7 @@
 {
     "name": "Sale order: Remove down payment line if down payment gets refunded",
     "summary": "Remove a down payment line from SO, if down payment is refunded",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

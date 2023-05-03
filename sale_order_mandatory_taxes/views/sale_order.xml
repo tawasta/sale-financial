@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">view.order.mandatory.taxes</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="active" eval="False" />
+        <field name="arch" type="xml">
+
+            <!-- Set this view as active to allow bypassing taxes -->
+            <field name="order_line" position="before">
+                <group>
+                    <field name="bypass_mandatory_tax" widget="boolean_toggle" />
+                </group>
+            </field>
+
+        </field>
+    </record>
+</odoo>

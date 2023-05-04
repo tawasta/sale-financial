@@ -21,7 +21,7 @@
 {
     "name": "Mandatory taxes for sale order",
     "summary": "Requires a tax for sale order lines before confirming",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

@@ -6,11 +6,6 @@ class SaleOrder(models.Model):
 
     _inherit = "sale.order"
 
-    order_line_without_tax_ids = fields.One2many(
-        comodel_name="sale.order.line",
-        inverse_name="order_id",
-        domain=[("tax_id", "=", False)],
-    )
     bypass_mandatory_tax = fields.Boolean(
         string="Allow confirming without taxes",
         default=False,
@@ -19,7 +14,11 @@ class SaleOrder(models.Model):
 
     def action_confirm(self):
         for record in self:
-            if record.order_line_without_tax_ids and not record.bypass_mandatory_tax:
+            lines_without_taxes = record.order_line.filtered(
+                lambda l: not l.tax_id and not l.display_type
+            )
+
+            if lines_without_taxes and not record.bypass_mandatory_tax:
                 raise ValidationError(_("Please set taxes for all the lines."))
 
         return super().action_confirm()

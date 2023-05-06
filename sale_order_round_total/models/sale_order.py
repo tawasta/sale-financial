@@ -4,7 +4,8 @@ from odoo import models
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    def action_confirm(self):
+    def add_rounding_product(self):
+        """Adds rounding product"""
         for record in self:
             if (
                 record.currency_id.sale_order_rounding
@@ -39,9 +40,8 @@ class SaleOrder(models.Model):
                 }
                 self.env["sale.order.line"].create(line_values)
 
-        return super().action_confirm()
-
-    def action_draft(self):
+    def delete_rounding_product(self):
+        """Removes rounding product"""
         for record in self:
             product = record.currency_id.sale_order_rounding_product_id
             # Delete rounding lines when SO is reset to draft,
@@ -53,4 +53,10 @@ class SaleOrder(models.Model):
             if rounding_line:
                 rounding_line.unlink()
 
+    def action_confirm(self):
+        self.add_rounding_product()
+        return super().action_confirm()
+
+    def action_draft(self):
+        self.delete_rounding_product()
         return super().action_draft()

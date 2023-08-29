@@ -13,6 +13,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_cost_pricelist](sale_cost_pricelist/) | 14.0.1.0.0 |  | Allows using cost pricelist for sale orders
 [sale_order_commitment_date_pivot_and_tree](sale_order_commitment_date_pivot_and_tree/) | 14.0.1.0.1 |  | Adds Commitment date on pivot and tree views
+[sale_order_disable_quantity_price_refresh](sale_order_disable_quantity_price_refresh/) | 14.0.1.0.0 |  | Disable price refresh on product quantity change
 [sale_order_down_payment_refund](sale_order_down_payment_refund/) | 14.0.1.0.1 |  | Remove a down payment line from SO, if down payment is refunded
 [sale_order_down_payment_rounding_difference](sale_order_down_payment_rounding_difference/) | 14.0.1.0.0 |  | Add a rounding difference line for final payment
 [sale_order_estimated_invoice_date](sale_order_estimated_invoice_date/) | 14.0.1.0.1 |  | Adds estimated invoice date to SO

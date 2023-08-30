@@ -18,6 +18,7 @@ addon | version | maintainers | summary
 [sale_order_down_payment_rounding_difference](sale_order_down_payment_rounding_difference/) | 14.0.1.0.0 |  | Add a rounding difference line for final payment
 [sale_order_estimated_invoice_date](sale_order_estimated_invoice_date/) | 14.0.1.0.1 |  | Adds estimated invoice date to SO
 [sale_order_invoice_commercial_partner](sale_order_invoice_commercial_partner/) | 14.0.1.0.1 |  | Invoice Address is replaced with Commercial Partner
+[sale_order_invoice_state_no_negative_upsell](sale_order_invoice_state_no_negative_upsell/) | 14.0.1.0.0 |  | Don't tag negative sale order lines as to upsell
 [sale_order_mandatory_taxes](sale_order_mandatory_taxes/) | 14.0.1.0.1 |  | Requires a tax for sale order lines before confirming
 [sale_order_margin_ignore](sale_order_margin_ignore/) | 14.0.1.0.0 |  | Ignore products when calculating margins
 [sale_order_mark_invoiced_button](sale_order_mark_invoiced_button/) | 14.0.1.1.0 |  | Mark sale orders as invoiced with a button

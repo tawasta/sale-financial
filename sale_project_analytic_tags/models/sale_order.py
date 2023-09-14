@@ -13,5 +13,9 @@ class SaleOrder(models.Model):
                     record.analytic_account_id.project_ids
                     and record.analytic_account_id.project_ids[0].analytic_tag_ids):
                 for line in record.order_line:
+                    if line.display_type:
+                        # Don't set analytic tags for comment lines
+                        continue
+
                     line.analytic_tag_ids += \
                         record.analytic_account_id.project_ids[0].analytic_tag_ids

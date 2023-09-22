@@ -5,6 +5,7 @@
 =========================================
 Product analytic tags on sale order lines
 =========================================
+
 Adds sale order line analytic tags from products
 
 Configuration
@@ -26,7 +27,6 @@ Credits
 Contributors
 ------------
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
-* Miika Nissi <miika.nissi@tawasta.fi>
 
 Maintainer
 ----------

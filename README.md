@@ -29,6 +29,8 @@ addon | version | maintainers | summary
 [sale_order_to_purchase_order_dates](sale_order_to_purchase_order_dates/) | 14.0.1.0.0 |  | PO promised delivery based on vendor information
 [sale_order_to_purchase_order_sale_header](sale_order_to_purchase_order_sale_header/) | 14.0.1.0.0 |  | Show sale order header for the purchase orders
 [sale_order_to_purchase_order_tree_fields](sale_order_to_purchase_order_tree_fields/) | 14.0.1.0.0 |  | Show SO number, header and customer name in PO tree
-[sale_product_analytic_tags](sale_product_analytic_tags/) | 14.0.1.0.1 |  | Adds sale order line analytic tags from products
+[sale_product_analytic_tags](sale_product_analytic_tags/) | 14.0.1.2.0 |  | Adds sale order line analytic tags from products
+[sale_project_analytic_tags](sale_project_analytic_tags/) | 14.0.1.0.0 |  | Adds sale order line analytic tags from analytic account
+[sales_team_disallow_invoicing](sales_team_disallow_invoicing/) | 14.0.1.0.0 |  | Disallow invoicing from salesman
 
 [//]: # (end addons)

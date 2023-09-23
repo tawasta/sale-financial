@@ -19,26 +19,23 @@
 ##############################################################################
 
 {
-    'name': 'Product analytic tags on sale order lines',
-    'summary': 'Adds sale order line analytic tags from products',
-    'version': '14.0.1.2.0',
-    'category': 'Sales',
-    'website': 'https://github.com/Tawasta/sale-financial',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
+    "name": "Product analytic tags on sale order lines",
+    "summary": "Adds sale order line analytic tags from products",
+    "version": "14.0.1.2.0",
+    "category": "Sales",
+    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {
+        "python": [],
+        "bin": [],
     },
-    'depends': [
-        'sale',
-        'product_analytic_tags',
+    "depends": [
+        "sale",
+        "product_analytic_tags",
     ],
-    'data': [
-
-    ],
-    'demo': [
-    ],
+    "data": [],
+    "demo": [],
 }

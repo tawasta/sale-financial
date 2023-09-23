@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,15 +19,20 @@
 ##############################################################################
 
 {
-    "name": "Analytic account analytic tags on sale order lines",
-    "summary": "Adds sale order line analytic tags from analytic account",
+    "name": "Disallow invoicing from salesman",
+    "summary": "Disallow invoicing from salesman",
+    "category": "Sale",
     "version": "14.0.1.0.0",
-    "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["sale", "analytic", "project_analytic_tags"],
-    "data": ["views/sale_order_form.xml"],
+    "depends": [
+        "sale",
+        "sales_team",
+    ],
+    "data": [
+        "security/ir.model.access.csv",
+    ],
 }

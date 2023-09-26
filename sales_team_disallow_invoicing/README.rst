@@ -2,15 +2,14 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=========================================
-Product analytic tags on sale order lines
-=========================================
+================================
+Disallow invoicing from salesman
+================================
 
-Adds sale order line analytic tags from products
+Disallow invoicing from salesman
 
 Configuration
 =============
-
 \-
 
 Usage
@@ -26,6 +25,7 @@ Credits
 
 Contributors
 ------------
+
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
 
 Maintainer
@@ -36,4 +36,3 @@ Maintainer
    :target: http://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd.
-

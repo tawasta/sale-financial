@@ -23,12 +23,14 @@ addon | version | maintainers | summary
 [sale_order_margin_ignore](sale_order_margin_ignore/) | 14.0.1.0.0 |  | Ignore products when calculating margins
 [sale_order_mark_invoiced_button](sale_order_mark_invoiced_button/) | 14.0.1.1.0 |  | Mark sale orders as invoiced with a button
 [sale_order_pricelist_details](sale_order_pricelist_details/) | 14.0.1.1.0 |  | Show pricelist details button in pricelist
-[sale_order_round_total](sale_order_round_total/) | 14.0.1.1.2 |  | Round SO total to a whole number
+[sale_order_round_total](sale_order_round_total/) | 14.0.1.1.3 |  | Round SO total to a whole number
 [sale_order_to_purchase_order](sale_order_to_purchase_order/) | 14.0.1.3.0 |  | Button for creating a PO from SO, containing the same lines
 [sale_order_to_purchase_order_customer_code](sale_order_to_purchase_order_customer_code/) | 14.0.1.0.0 |  | Transfer customer product codes to PO lines
 [sale_order_to_purchase_order_dates](sale_order_to_purchase_order_dates/) | 14.0.1.0.0 |  | PO promised delivery based on vendor information
 [sale_order_to_purchase_order_sale_header](sale_order_to_purchase_order_sale_header/) | 14.0.1.0.0 |  | Show sale order header for the purchase orders
 [sale_order_to_purchase_order_tree_fields](sale_order_to_purchase_order_tree_fields/) | 14.0.1.0.0 |  | Show SO number, header and customer name in PO tree
-[sale_product_analytic_tags](sale_product_analytic_tags/) | 14.0.1.0.1 |  | Adds sale order line analytic tags from products
+[sale_product_analytic_tags](sale_product_analytic_tags/) | 14.0.1.2.0 |  | Adds sale order line analytic tags from products
+[sale_project_analytic_tags](sale_project_analytic_tags/) | 14.0.1.0.0 |  | Adds sale order line analytic tags from analytic account
+[sales_team_disallow_invoicing](sales_team_disallow_invoicing/) | 14.0.1.0.0 |  | Disallow invoicing from salesman
 
 [//]: # (end addons)

@@ -19,23 +19,20 @@
 ##############################################################################
 
 {
-    "name": "Product analytic tags on sale order lines",
-    "summary": "Adds sale order line analytic tags from products",
-    "version": "14.0.1.2.0",
-    "category": "Sales",
+    "name": "Disallow invoicing from salesman",
+    "summary": "Disallow invoicing from salesman",
+    "category": "Sale",
+    "version": "14.0.1.0.0",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
     "depends": [
         "sale",
-        "product_analytic_tags",
+        "sales_team",
     ],
-    "data": [],
-    "demo": [],
+    "data": [
+        "security/ir.model.access.csv",
+    ],
 }

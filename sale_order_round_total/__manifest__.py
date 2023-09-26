@@ -21,7 +21,7 @@
 {
     "name": "Sale order round total",
     "summary": "Round SO total to a whole number",
-    "version": "14.0.1.1.2",
+    "version": "14.0.1.1.3",
     "category": "Sale",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

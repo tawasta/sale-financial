@@ -44,6 +44,9 @@ class SaleOrder(models.Model):
         """Removes rounding product"""
         for record in self:
             product = record.currency_id.sale_order_rounding_product_id
+            if not product:
+                # Rounding product is not set
+                continue
             # Delete rounding lines when SO is reset to draft,
             # to prevent creating multiple rounding lines
             rounding_line = record.order_line.filtered(

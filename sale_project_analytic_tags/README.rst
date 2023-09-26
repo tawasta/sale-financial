@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=========================================
-Product analytic tags on sale order lines
-=========================================
+=================================================
+Analytic account analytic tags on sale order line
+=================================================
 
-Adds sale order line analytic tags from products
+Adds sale order line analytic tags from analytic account
 
 Configuration
 =============

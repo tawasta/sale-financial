@@ -9,19 +9,16 @@ class SaleOrderLine(models.Model):
         default=lambda self: self._default_get_analytic_tag_ids()
     )
 
-    def _default_get_analytic_tag_ids(self):
-        res = False
-
-        analytic_account_id = self._context.get("analytic_account_id")
-        if analytic_account_id:
-            analytic_account = self.env["account.analytic.account"].browse(
-                [analytic_account_id]
-            )
-
-            res = (
-                analytic_account
-                and analytic_account.project_ids
+    def _compute_analytic_tag_ids(self):
+        # First default analytic tags
+        super()._compute_analytic_tag_ids()
+        for record in self:
+            analytic_account = record.order_id.analytic_account_id
+            # Add project-specific tags
+            if (
+                analytic_account.project_ids
                 and analytic_account.project_ids[0].analytic_tag_ids
-            )
-
-        return res
+            ):
+                record.analytic_tag_ids += analytic_account.project_ids[
+                    0
+                ].analytic_tag_ids

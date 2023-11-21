@@ -1,13 +1,9 @@
-from odoo import fields, models
+from odoo import models
 
 
 class SaleOrderLine(models.Model):
 
     _inherit = "sale.order.line"
-
-    analytic_tag_ids = fields.Many2many(
-        default=lambda self: self._default_get_analytic_tag_ids()
-    )
 
     def _compute_analytic_tag_ids(self):
         # First default analytic tags

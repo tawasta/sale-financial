@@ -5,9 +5,11 @@ class SaleOrderLine(models.Model):
 
     _inherit = "sale.order.line"
 
-    @api.onchange("product_id")
-    def onchange_product_id_update_analytic_tags(self):
+    def _compute_analytic_tag_ids(self):
+        # First default analytic tags
+        super()._compute_analytic_tag_ids()
         for record in self:
+            # Add product-specific tags
             if record.product_id and record.product_id.get_analytic_tags():
                 record.analytic_tag_ids += record.product_id.get_analytic_tags()
 
@@ -20,4 +22,4 @@ class SaleOrderLine(models.Model):
 
             values["analytic_tag_ids"] = [(6, 0, product.get_analytic_tags().ids)]
 
-        return super(SaleOrderLine, self).create(values)
+        return super().create(values)

@@ -21,7 +21,7 @@
 {
     "name": "Analytic account analytic tags on sale order lines",
     "summary": "Adds sale order line analytic tags from analytic account",
-    "version": "14.0.1.0.2",
+    "version": "14.0.1.0.3",
     "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

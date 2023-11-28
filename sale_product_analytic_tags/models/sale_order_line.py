@@ -9,9 +9,10 @@ class SaleOrderLine(models.Model):
         # First default analytic tags
         super()._compute_analytic_tag_ids()
         for record in self:
-            # Add product-specific tags
-            if record.product_id and record.product_id.get_analytic_tags():
-                record.analytic_tag_ids += record.product_id.get_analytic_tags()
+            if not record.display_type and record.state == "draft":
+                # Add product-specific tags
+                if record.product_id and record.product_id.get_analytic_tags():
+                    record.analytic_tag_ids += record.product_id.get_analytic_tags()
 
     @api.model
     def create(self, values):

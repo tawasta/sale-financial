@@ -9,12 +9,13 @@ class SaleOrderLine(models.Model):
         # First default analytic tags
         super()._compute_analytic_tag_ids()
         for record in self:
-            analytic_account = record.order_id.analytic_account_id
-            # Add project-specific tags
-            if (
-                analytic_account.project_ids
-                and analytic_account.project_ids[0].analytic_tag_ids
-            ):
-                record.analytic_tag_ids += analytic_account.project_ids[
-                    0
-                ].analytic_tag_ids
+            if not record.display_type and record.state == "draft":
+                analytic_account = record.order_id.analytic_account_id
+                # Add project-specific tags
+                if (
+                    analytic_account.project_ids
+                    and analytic_account.project_ids[0].analytic_tag_ids
+                ):
+                    record.analytic_tag_ids += analytic_account.project_ids[
+                        0
+                    ].analytic_tag_ids

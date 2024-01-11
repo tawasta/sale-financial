@@ -6,4 +6,11 @@ Sale Financial
 Sale Financial Addons for Odoo.
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sale_order_pricelist_details](sale_order_pricelist_details/) | 17.0.1.0.0 |  | Show pricelist details button in pricelist
+
 [//]: # (end addons)

@@ -24,7 +24,7 @@ addon | version | maintainers | summary
 [sale_order_mark_invoiced_button](sale_order_mark_invoiced_button/) | 14.0.1.1.0 |  | Mark sale orders as invoiced with a button
 [sale_order_pricelist_details](sale_order_pricelist_details/) | 14.0.1.1.0 |  | Show pricelist details button in pricelist
 [sale_order_round_total](sale_order_round_total/) | 14.0.1.1.3 |  | Round SO total to a whole number
-[sale_order_to_purchase_order](sale_order_to_purchase_order/) | 14.0.1.3.0 |  | Button for creating a PO from SO, containing the same lines
+[sale_order_to_purchase_order](sale_order_to_purchase_order/) | 14.0.1.3.1 |  | Button for creating a PO from SO, containing the same lines
 [sale_order_to_purchase_order_customer_code](sale_order_to_purchase_order_customer_code/) | 14.0.1.0.0 |  | Transfer customer product codes to PO lines
 [sale_order_to_purchase_order_dates](sale_order_to_purchase_order_dates/) | 14.0.1.0.0 |  | PO promised delivery based on vendor information
 [sale_order_to_purchase_order_sale_header](sale_order_to_purchase_order_sale_header/) | 14.0.1.0.0 |  | Show sale order header for the purchase orders

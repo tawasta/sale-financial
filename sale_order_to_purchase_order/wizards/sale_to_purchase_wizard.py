@@ -51,16 +51,10 @@ class SaleToPurchaseWizard(models.TransientModel):
             "sale_line_id": current_sale_line.id,
         }
 
-        updated_values = purchase_order_line_model.play_onchanges(
-            initial_values, ["product_id"]
-        )
+        order_line = purchase_order_line_model.create(initial_values)
+        order_line._onchange_quantity()
 
-        # Price is mandatory, so set is as 0 in case no
-        # supplier price was found
-        if "price_unit" not in updated_values:
-            updated_values["price_unit"] = 0.00
-
-        return purchase_order_line_model.create(updated_values)
+        return order_line
 
     def button_create_po(self):
         current_sale = self.env["sale.order"].browse(self.env.context["active_id"])

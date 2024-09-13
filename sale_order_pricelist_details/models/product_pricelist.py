@@ -2,7 +2,6 @@ from odoo import models
 
 
 class ProductPricelist(models.Model):
-
     _inherit = "product.pricelist"
 
     def action_pricelist_line_tree(self):

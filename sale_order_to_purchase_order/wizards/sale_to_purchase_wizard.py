@@ -50,7 +50,7 @@ class SaleToPurchaseWizard(models.TransientModel):
         }
 
         order_line = purchase_order_line_model.create(initial_values)
-        order_line._onchange_quantity()
+        order_line._compute_price_unit_and_date_planned_and_name()
 
         return order_line
 

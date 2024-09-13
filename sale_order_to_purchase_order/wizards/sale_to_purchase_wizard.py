@@ -2,7 +2,6 @@ from odoo import fields, models
 
 
 class SaleToPurchaseWizard(models.TransientModel):
-
     _name = "sale.to.purchase.wizard"
 
     def create_purchase(self, current_sale):
@@ -38,7 +37,6 @@ class SaleToPurchaseWizard(models.TransientModel):
         return purchase_order_model.create(updated_values)
 
     def create_purchase_line(self, current_sale_line, purchase_order):
-
         purchase_order_line_model = self.env["purchase.order.line"]
 
         initial_values = {

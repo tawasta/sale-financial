@@ -12,5 +12,6 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_order_pricelist_details](sale_order_pricelist_details/) | 17.0.1.0.0 |  | Show pricelist details button in pricelist
+[sale_order_to_purchase_order](sale_order_to_purchase_order/) | 17.0.1.0.0 |  | Button for creating a PO from SO, containing the same lines
 
 [//]: # (end addons)

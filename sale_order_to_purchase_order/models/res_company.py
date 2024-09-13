@@ -2,7 +2,6 @@ from odoo import _, fields, models
 
 
 class ResCompany(models.Model):
-
     _inherit = "res.company"
 
     sale_to_purchase_note_text = fields.Text(

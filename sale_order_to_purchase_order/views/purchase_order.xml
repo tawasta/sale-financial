@@ -7,13 +7,19 @@
         <field name="arch" type="xml">
             <field name="origin" position="after">
                 <field
-                    name="sale_order_id" readonly="True" invisible="sale_order_id == False"
+                    name="sale_order_id"
+                    readonly="True"
+                    invisible="sale_order_id == False"
                 />
                 <field
-                    name="so_partner_id" readonly="True" invisible="sale_order_id == False"
+                    name="so_partner_id"
+                    readonly="True"
+                    invisible="sale_order_id == False"
                 />
                 <field
-                    name="so_client_order_ref" readonly="True" invisible="sale_order_id == False"
+                    name="so_client_order_ref"
+                    readonly="True"
+                    invisible="sale_order_id == False"
                 />
             </field>
         </field>

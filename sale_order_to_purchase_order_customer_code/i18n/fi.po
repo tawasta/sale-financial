@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_to_purchase_order_customer_code
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240126\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 07:58+0000\n"
+"PO-Revision-Date: 2024-09-20 11:00+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: sale_order_to_purchase_order_customer_code
+#. odoo-python
+#: code:addons/sale_order_to_purchase_order_customer_code/wizards/sale_to_purchase_wizard.py:0
+#, python-format
+msgid ""
+"\n"
+"Customer's code: {}"
+msgstr ""
+"\n"
+"Asiakkaan koodi: {}"
+
+#. module: sale_order_to_purchase_order_customer_code
+#: model:ir.model.fields,help:sale_order_to_purchase_order_customer_code.field_sale_to_purchase_wizard__add_customer_codes
+msgid ""
+"If the sold products have customer-specific codes, add them\n"
+"              to the PO line descriptions"
+msgstr ""
+"Jos myydyllä tuotteella on asiakaskohtaisia koodeja, lisää ne\n"
+"              ostorivin kuvaukseen"
+
+#. module: sale_order_to_purchase_order_customer_code
+#: model:ir.model.fields,field_description:sale_order_to_purchase_order_customer_code.field_sale_to_purchase_wizard__add_customer_codes
+msgid "Show Customer Product Codes"
+msgstr "Näytä asiakkaan tuotekoodit"
+
+#. module: sale_order_to_purchase_order_customer_code
+#: model:ir.model,name:sale_order_to_purchase_order_customer_code.model_sale_to_purchase_wizard
+msgid "sale.to.purchase.wizard"
+msgstr "sale.to.purchase.wizard"

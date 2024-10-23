@@ -28,7 +28,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["sale_stock", "purchase", "onchange_helper"],
+    "depends": ["sale_stock", "purchase", "purchase_stock", "onchange_helper"],
     "data": [
         "security/model_access.xml",
         "wizards/sale_to_purchase_wizard.xml",

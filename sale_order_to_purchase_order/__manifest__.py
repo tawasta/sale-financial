@@ -21,14 +21,14 @@
 {
     "name": "Sale Order to Purchase Order",
     "summary": "Button for creating a PO from SO, containing the same lines",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.1.1",
     "category": "Sales",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["sale_stock", "purchase", "onchange_helper"],
+    "depends": ["sale_stock", "purchase", "purchase_stock", "onchange_helper"],
     "data": [
         "security/model_access.xml",
         "wizards/sale_to_purchase_wizard.xml",

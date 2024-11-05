@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, _
 
 
 class PurchaseOrder(models.Model):
@@ -29,8 +29,13 @@ class PurchaseOrder(models.Model):
             sale_orders = record.order_line.mapped("sale_order_id")
 
             for sale_order in sale_orders:
-                # Cancel the related deliveries on SO
-                sale_order.picking_ids.action_cancel()
+                for picking in sale_order.picking_ids:
+                    if not picking.is_dropship:
+                        picking.message_post(
+                            body=_("Canceling a non-dropship picking of Sale Order %s")
+                            % sale_order.name
+                        )
+                        picking.action_cancel()
 
                 # Change the procurement group on SO
                 sale_order.procurement_group_id = record.group_id

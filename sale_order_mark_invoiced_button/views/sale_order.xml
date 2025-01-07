@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sale_form_view_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <button name="action_draft" position="after">
+                <button
+                    string="Mark as Invoiced"
+                    name="action_mark_invoiced"
+                    type="object"
+                    invisible="force_invoiced"
+                    groups="sale_force_invoiced.group_force_invoiced"
+                    confirm="Are you sure? This will mark the sale as invoiced"
+                />
+            </button>
+        </field>
+    </record>
+</odoo>

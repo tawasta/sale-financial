@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_order_form_estimated_invoice" model="ir.ui.view">
+        <field name="name">sale.order.form.estimated.invoice</field>
+        <field name="model">sale.order</field>
+        <field eval="20" name="priority" />
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <field name="date_order" position="after">
+                <field name="estimated_invoice_date" />
+            </field>
+        </field>
+    </record>
+    <record id="view_quotation_tree_estimated_invoice" model="ir.ui.view">
+        <field name="name">sale.order.tree.estimated.invoice</field>
+        <field name="model">sale.order</field>
+        <field eval="20" name="priority" />
+        <field name="inherit_id" ref="sale.view_quotation_tree" />
+        <field name="arch" type="xml">
+            <field name="create_date" position="after">
+                <field name="estimated_invoice_date" optional="show" />
+            </field>
+        </field>
+    </record>
+    <record id="view_order_tree_estimated_invoice" model="ir.ui.view">
+        <field name="name">sale.order.tree.estimated.invoice</field>
+        <field name="model">sale.order</field>
+        <field eval="20" name="priority" />
+        <field name="inherit_id" ref="sale.view_order_tree" />
+        <field name="arch" type="xml">
+            <field name="date_order" position="after">
+                <field name="estimated_invoice_date" optional="show" />
+            </field>
+        </field>
+    </record>
+    <record id="view_sales_order_filter_estimated_invoice" model="ir.ui.view">
+        <field name="name">sale.order.list.select.estimated.invoice</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter" />
+        <field name="arch" type="xml">
+            <filter name="my_sale_orders_filter" position="after">
+                <filter
+                    string="Estimated Invoice Date"
+                    name="filter_estimated_invoice_date"
+                    date="estimated_invoice_date"
+                />
+            </filter>
+        </field>
+    </record>
+</odoo>

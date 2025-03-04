@@ -11,6 +11,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sale_order_commitment_date_pivot_and_tree](sale_order_commitment_date_pivot_and_tree/) | 17.0.1.0.0 |  | Adds Commitment date on pivot and tree views
 [sale_order_estimated_invoice_date](sale_order_estimated_invoice_date/) | 17.0.1.0.0 |  | Adds estimated invoice date to SO
 [sale_order_mark_invoiced_button](sale_order_mark_invoiced_button/) | 17.0.1.1.0 |  | Mark sale orders as invoiced with a button
 [sale_order_pricelist_details](sale_order_pricelist_details/) | 17.0.1.0.0 |  | Show pricelist details button in pricelist

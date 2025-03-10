@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_round_total
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20241118\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 12:48+0000\n"
+"PO-Revision-Date: 2025-03-10 12:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_round_total
+#: model_terms:ir.ui.view,arch_db:sale_order_round_total.view_order_form
+msgid "Add rounding line"
+msgstr "Lägg till avrundningsrad"
+
+#. module: sale_order_round_total
+#: model:ir.model,name:sale_order_round_total.model_res_currency
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: sale_order_round_total
+#: model_terms:ir.ui.view,arch_db:sale_order_round_total.view_order_form
+msgid "Delete rounding line"
+msgstr "Ta bort avrundningsrad"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,help:sale_order_round_total.field_res_currency__sale_order_rounding
+msgid "Round sale order totals to a whole number"
+msgstr "Avrunda försäljningsorderns total till ett heltal"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__sale_order_rounding_product_id
+msgid "Rounding product"
+msgstr "Avrundningsprodukt"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,field_description:sale_order_round_total.field_res_currency__sale_order_rounding
+msgid "Sale order rounding"
+msgstr "Försäljningsorder Avrundning"
+
+#. module: sale_order_round_total
+#: model:ir.model,name:sale_order_round_total.model_sale_order
+msgid "Sales Order"
+msgstr "Försäljningsorder"
+
+#. module: sale_order_round_total
+#: model:ir.model,name:sale_order_round_total.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Orderrad"
+
+#. module: sale_order_round_total
+#: model:ir.model.fields,help:sale_order_round_total.field_res_currency__sale_order_rounding_product_id
+msgid "The product to use for rounding. Defaults to deposit product"
+msgstr "Produkten som ska användas för avrundning."

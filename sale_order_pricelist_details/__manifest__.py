@@ -23,7 +23,7 @@
     "summary": "Show pricelist details button in pricelist",
     "category": "Sale",
     "version": "17.0.1.0.0",
-    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
+    "website": "https://github.com/tawasta/sale-financial",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,

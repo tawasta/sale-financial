@@ -1,5 +1,6 @@
-from odoo import fields, models
 import logging
+
+from odoo import fields, models
 
 _logger = logging.getLogger(__name__)
 
@@ -7,7 +8,7 @@ _logger = logging.getLogger(__name__)
 class SaleReport(models.Model):
     _inherit = "sale.report"
 
-    commitment_date = fields.Datetime(string="Commitment Date", readonly=True)
+    commitment_date = fields.Datetime(readonly=True)
 
     def _select_additional_fields(self):
         res = super()._select_additional_fields()

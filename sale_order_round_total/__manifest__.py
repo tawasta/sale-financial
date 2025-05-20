@@ -21,7 +21,7 @@
 {
     "name": "Sale Order: Round Total",
     "summary": "Currency setting for rounding SO totals to a whole number",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Sale",
     "website": "https://gitlab.com/tawasta/odoo/sale-financial",
     "author": "Tawasta",

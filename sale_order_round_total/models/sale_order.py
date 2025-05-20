@@ -37,6 +37,7 @@ class SaleOrder(models.Model):
                     "price_unit": amount,
                     "product_uom": product.uom_id.id,
                     "tax_id": [(6, 0, tax_ids.ids)],
+                    "sequence": 9999,
                 }
                 self.env["sale.order.line"].create(line_values)
 

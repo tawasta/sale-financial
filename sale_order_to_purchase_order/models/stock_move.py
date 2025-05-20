@@ -1,8 +1,8 @@
-from odoo.addons.sale_stock.models.stock import (
-    StockMove as SaleStockMove,
-)
 from odoo.addons.purchase_stock.models.stock_move import (
     StockMove as PurchaseStockMove,
+)
+from odoo.addons.sale_stock.models.stock import (
+    StockMove as SaleStockMove,
 )
 
 

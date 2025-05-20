@@ -51,7 +51,8 @@ class SaleOrder(models.Model):
             # Delete rounding lines when SO is reset to draft,
             # to prevent creating multiple rounding lines
             rounding_line = record.order_line.filtered(
-                lambda line: line.product_id == product and abs(line.price_unit) < 1
+                lambda line, product=product: line.product_id == product
+                and abs(line.price_unit) < 1
             )
 
             if rounding_line:

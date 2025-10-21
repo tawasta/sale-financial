@@ -37,6 +37,7 @@ class SaleOrder(models.Model):
                     "price_unit": amount,
                     "product_uom": product.uom_id.id,
                     "tax_id": [(6, 0, tax_ids.ids)],
+                    "sequence": 9999,
                 }
                 self.env["sale.order.line"].create(line_values)
 
@@ -50,7 +51,8 @@ class SaleOrder(models.Model):
             # Delete rounding lines when SO is reset to draft,
             # to prevent creating multiple rounding lines
             rounding_line = record.order_line.filtered(
-                lambda line: line.product_id == product and abs(line.price_unit) < 1
+                lambda line, product=product: line.product_id == product
+                and abs(line.price_unit) < 1
             )
 
             if rounding_line:

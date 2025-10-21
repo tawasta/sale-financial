@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2023 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Author: Futural Oy
+#    Copyright 2023 Futural Oy (https://futural.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -21,10 +21,10 @@
 {
     "name": "Sale Order: Round Total",
     "summary": "Currency setting for rounding SO totals to a whole number",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.2",
     "category": "Sale",
-    "website": "https://gitlab.com/tawasta/odoo/sale-financial",
-    "author": "Tawasta",
+    "website": "https://github.com/tawasta/sale-financial",
+    "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

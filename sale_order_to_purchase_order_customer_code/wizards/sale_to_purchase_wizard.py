@@ -20,7 +20,7 @@ class SaleToPurchaseWizard(models.TransientModel):
         if self.add_customer_codes:
             code = self.get_customer_code(res.product_id, purchase_order)
             if code:
-                res.name += _("\nCustomer's code: {}".format(code))
+                res.name += _(f"\nCustomer's code: {code}")
 
         return res
 

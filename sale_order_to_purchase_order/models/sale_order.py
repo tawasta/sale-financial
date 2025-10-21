@@ -20,7 +20,6 @@ class SaleOrder(models.Model):
             ("exception", "Purchase Exception"),
         ],
         compute="_compute_purchase_status",
-        string="Purchase Status",
     )
 
     def _compute_purchase_status(self):

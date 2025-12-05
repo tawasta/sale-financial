@@ -15,7 +15,7 @@ addon | version | maintainers | summary
 [sale_order_estimated_invoice_date](sale_order_estimated_invoice_date/) | 17.0.1.0.0 |  | Adds estimated invoice date to SO
 [sale_order_mark_invoiced_button](sale_order_mark_invoiced_button/) | 17.0.1.1.0 |  | Mark sale orders as invoiced with a button
 [sale_order_pricelist_details](sale_order_pricelist_details/) | 17.0.1.0.0 |  | Show pricelist details button in pricelist
-[sale_order_round_total](sale_order_round_total/) | 17.0.1.0.1 |  | Currency setting for rounding SO totals to a whole number
+[sale_order_round_total](sale_order_round_total/) | 17.0.1.0.2 |  | Currency setting for rounding SO totals to a whole number
 [sale_order_to_purchase_order](sale_order_to_purchase_order/) | 17.0.1.1.2 |  | Button for creating a PO from SO, containing the same lines
 [sale_order_to_purchase_order_customer_code](sale_order_to_purchase_order_customer_code/) | 17.0.1.0.0 |  | Transfer customer product codes to PO lines
 [sale_order_to_purchase_order_dates](sale_order_to_purchase_order_dates/) | 17.0.1.0.0 |  | PO promised delivery based on vendor information

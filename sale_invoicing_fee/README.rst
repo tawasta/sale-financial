@@ -44,15 +44,6 @@ Payment Method**, if set, exactly like ``payment_term_id`` defaults from
 the customer's payment terms. Any later change (backend or webshop)
 overrides that default.
 
-.. note::
-   Not to be confused with ``sale.order.preferred_payment_method_line_id``
-   / ``res.partner.property_inbound_payment_method_line_id``, which are
-   core Accounting fields (``account.payment.method.line``) used as the
-   default for registering incoming payments in Accounting. They are
-   unrelated to online payment methods and cannot express a fee that
-   varies within a single payment provider (e.g. free bank transfer vs.
-   a surcharge for paying by phone bill, both via the same provider).
-
 Known issues / Roadmap
 ======================
 \-

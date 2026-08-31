@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_invoicing_fee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260828\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 00:00+0000\n"
+"PO-Revision-Date: 2026-08-28 00:00+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_invoicing_fee
+#: model:ir.model.fields,field_description:sale_invoicing_fee.field_payment_method__product_id
+msgid "Extra fee product"
+msgstr "Lisämaksutuote"
+
+#. module: sale_invoicing_fee
+#: model:ir.model.fields,help:sale_invoicing_fee.field_payment_method__product_id
+msgid ""
+"When set, this product is added as a line to the sale order when a "
+"customer pays with this payment method."
+msgstr ""
+"Kun tämä on asetettu, tuote lisätään myyntitilaukselle riviksi kun "
+"asiakas maksaa tällä maksutavalla."
+
+#. module: sale_invoicing_fee
+#: model:ir.model.fields,field_description:sale_invoicing_fee.field_sale_order_line__is_payment_method_fee_line
+msgid "Is a payment method fee line"
+msgstr "On maksutavan lisämaksurivi"
+
+#. module: sale_invoicing_fee
+#: model:ir.model.fields,help:sale_invoicing_fee.field_sale_order_line__is_payment_method_fee_line
+msgid ""
+"Technical flag marking a line as an automatically added payment method "
+"fee, so it can be safely replaced/removed when the customer picks a "
+"different payment method."
+msgstr ""
+"Tekninen merkintä joka osoittaa rivin automaattisesti lisätyksi "
+"maksutavan lisämaksuksi, jotta se voidaan turvallisesti korvata tai "
+"poistaa kun asiakas valitsee toisen maksutavan."

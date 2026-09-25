@@ -20,5 +20,6 @@ addon | version | maintainers | summary
 [sale_order_to_purchase_order_customer_code](sale_order_to_purchase_order_customer_code/) | 17.0.1.0.0 |  | Transfer customer product codes to PO lines
 [sale_order_to_purchase_order_dates](sale_order_to_purchase_order_dates/) | 17.0.1.0.0 |  | PO promised delivery based on vendor information
 [sale_order_to_purchase_order_sale_header](sale_order_to_purchase_order_sale_header/) | 17.0.1.0.0 |  | Transfer sale order header for the purchase orders
+[sale_to_purchase_note_auto_po](sale_to_purchase_note_auto_po/) | 17.0.1.0.0 |  | Copy the customer reference note to purchase orders that are automatically generated (MTO/Buy, subcontracting, ...) from a sale order
 
 [//]: # (end addons)

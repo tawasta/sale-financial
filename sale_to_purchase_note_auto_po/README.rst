@@ -40,7 +40,7 @@ Credits
 Contributors
 ------------
 
-* Futural Oy
+* Valtteri Lattu <valtteri.lattu@futural.fi>
 
 Maintainer
 ----------
